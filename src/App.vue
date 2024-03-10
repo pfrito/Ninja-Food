@@ -1,11 +1,7 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<script setup></script>
+
+<template>
+  <body class="text-gray-600">
     <div>
       <!-- content wrapper -->
       <div>
@@ -52,7 +48,7 @@
           <div>
             <!-- cards go here -->
             <div>
-              <img src="/public/img/stew.jpg" alt="" />
+              <img src="./assets/stew.jpg" alt="" />
               <div>
                 <span>5 Bean Chilli Stew</span>
                 <span>Recipe by Mario</span>
@@ -72,4 +68,6 @@
       </main>
     </div>
   </body>
-</html>
+</template>
+
+<style scoped></style>

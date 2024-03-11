@@ -34,8 +34,8 @@
 
       <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div class="flex justify-center md:justify-end">
-          <a href="#" class="text-primary">Login</a>
-          <a href="#" class="text-primary ml-2">Sign up</a>
+          <a href="#" class="text-primary btn border-primary md:border-2">Login</a>
+          <a href="#" class="text-primary ml-2 btn border-primary md:border-2">Sign up</a>
         </div>
 
         <header>
@@ -91,7 +91,7 @@
           </div>
 
           <div class="flex justify-center">
-            <div class="bg-secondary-100 text-secondary-200">Load more</div>
+            <div class="bg-secondary-100 text-secondary-200 btn">Load more</div>
           </div>
         </div>
       </main>

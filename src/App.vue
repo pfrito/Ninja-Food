@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+let isActive = ref(true);
+</script>
 
 <template>
   <body class="text-gray-600 font-body">
@@ -6,14 +9,36 @@
       <!-- content wrapper -->
       <div class="md:col-span-1 md:flex md:justify-end">
         <nav class="text-right">
-          <div>
+          <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
               <a href="/" class="hover:text-gray-700">Food Ninja</a>
             </h1>
+            <div
+              class="px-4 cursor-pointer md:hidden"
+              @click="isActive = !isActive"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                class="w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </div>
-          <ul class="text-sm mt-6">
+          <ul class="text-sm mt-6 md:block" :class="{ hidden: isActive }">
             <li class="text-gray-700 font-bold py-1">
-              <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
+              <a
+                href="#"
+                class="px-4 flex justify-end border-r-4 border-primary"
+              >
                 <span>Home</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -75,15 +100,15 @@
       <!-- end nav -->
 
       <main class="px-16 py-6 bg-gray-100 md:col-span-2">
-        <div class="flex justify-center md:justify-end">
+        <div class="flex justify-center md:justify-end mb-3 md:mb-0">
           <a
             href="#"
-            class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white"
+            class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in-out duration-300"
             >Login</a
           >
           <a
             href="#"
-            class="text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white"
+            class="text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-in-out duration-300"
             >Sign up</a
           >
         </div>
@@ -196,7 +221,7 @@
 
           <div class="flex justify-center">
             <div
-              class="bg-secondary-100 text-secondary-200 btn hover:shadow-inner"
+              class="bg-secondary-100 text-secondary-200 btn hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-200"
             >
               Load more
             </div>

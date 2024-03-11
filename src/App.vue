@@ -4,16 +4,16 @@
   <body class="text-gray-600 font-body">
     <div class="grid md:grid-cols-3">
       <!-- content wrapper -->
-      <div class="md:col-span-1">
-        <nav>
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
           <div>
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
-              <a href="/">Food Ninja</a>
+              <a href="/" class="hover:text-gray-700">Food Ninja</a>
             </h1>
           </div>
-          <ul>
-            <li class="text-gray-700 font-bold">
-              <a href="#">
+          <ul class="text-sm mt-6">
+            <li class="text-gray-700 font-bold py-1">
+              <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
                 <span>Home</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  class="w-5"
+                  class="w-5 ml-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -31,8 +31,8 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="py-1 border-r-4 border-white">
+              <a href="#" class="px-4 flex justify-end">
                 <span>About</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  class="w-5"
+                  class="w-5 ml-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -50,8 +50,8 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="py-1 border-r-4 border-white">
+              <a href="#" class="px-4 flex justify-end">
                 <span class="mammoth">Contact</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@
                   viewBox="0 0 24 24"
                   strokeWidth="{1.5}"
                   stroke="currentColor"
-                  class="w-5"
+                  class="w-5 ml-2"
                 >
                   <path
                     strokeLinecap="round"
@@ -76,10 +76,14 @@
 
       <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div class="flex justify-center md:justify-end">
-          <a href="#" class="text-primary btn border-primary md:border-2"
+          <a
+            href="#"
+            class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white"
             >Login</a
           >
-          <a href="#" class="text-primary ml-2 btn border-primary md:border-2"
+          <a
+            href="#"
+            class="text-primary ml-2 btn border-primary md:border-2 hover:bg-primary hover:text-white"
             >Sign up</a
           >
         </div>
@@ -95,7 +99,7 @@
           </h4>
           <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!-- cards go here -->
-            <div class="card">
+            <div class="card hover:shadow-lg">
               <img
                 src="./assets/stew.jpg"
                 alt="stew"
@@ -105,7 +109,7 @@
                 <span class="font-bold">5 Bean Chilli Stew</span>
                 <span class="block text-gray-500 text-sm">Recipe by Mario</span>
               </div>
-              <div class="batch">
+              <div class="badge">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -124,7 +128,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card hover:shadow-lg">
               <img
                 src="./assets/noodles.jpg"
                 alt="noodles"
@@ -134,7 +138,7 @@
                 <span class="font-bold">Veg Noodles</span>
                 <span class="block text-gray-500 text-sm">Recipe by Mario</span>
               </div>
-              <div class="batch">
+              <div class="badge">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -153,7 +157,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card hover:shadow-lg">
               <img
                 src="./assets/curry.jpg"
                 alt="curry"
@@ -163,7 +167,7 @@
                 <span class="font-bold">Tofu Curry</span>
                 <span class="block text-gray-500 text-sm">Recipe by Mario</span>
               </div>
-              <div class="batch">
+              <div class="badge">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -191,7 +195,11 @@
           </div>
 
           <div class="flex justify-center">
-            <div class="bg-secondary-100 text-secondary-200 btn">Load more</div>
+            <div
+              class="bg-secondary-100 text-secondary-200 btn hover:shadow-inner"
+            >
+              Load more
+            </div>
           </div>
         </div>
       </main>

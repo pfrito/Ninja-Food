@@ -1,7 +1,26 @@
-# Vue 3 + Vite
+# Ninja Food
+## Description
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A web menu for a restaurant or cafe, with a responsive design for all kind of devices. It is made with Vue 3 and Tailwind CSS. **I you enjoy it!**
 
-## Recommended IDE Setup
+## Design
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![mobile-view](public/mobile-view.jpg)
+![desktop-view](public/desktop-view.jpg)
+
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# compile tailwind changes
+$ npm run build
+
+# serve with hot reload at localhost:5173
+$ npm run dev
+```
+
+## Contribution
+
+To contribute to this project please check out the [contribution guidelines](https://github.com/YurisCodingClub/accessibility-mentor/blob/main/CONTRIBUTING.md).
